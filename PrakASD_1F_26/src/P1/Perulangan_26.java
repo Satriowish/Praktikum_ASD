@@ -13,18 +13,14 @@ public class Perulangan_26 {
         if (n < 10) {
             n += 10;
         }
-
         System.out.print("OUTPUT : ");
         for (int i = 1; i <= n; i++) {
-            if (i == 6 || i == 10) {
-                // Angka 6 dan 10 tidak dicetak
+            if (i == 6 || i == 10) { // Angka 6 dan 10 tidak dicetak
                 continue;
             }
-            if (i % 2 == 0) {
-                // Angka genap dicetak sesuai bilangan aslinya
+            if (i % 2 == 0) { // Angka genap dicetak sesuai bilangan aslinya
                 System.out.print(i + " ");
-            } else {
-                // Angka ganjil dicetak dengan asterik
+            } else { // Angka ganjil akan tercetak dengan *
                 System.out.print("* ");
             }
         }
