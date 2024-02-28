@@ -15,14 +15,8 @@ public class BukuMain26 {
         bk1.gantiHarga(60000);
         bk1.tampilkanInformasi();
 
-        Buku26 bk2 = new Buku26();
-        bk2.judul = "How to Train Your Dragon";
-        bk2.pengarang = "Cressida Cowell";
-        bk2.halaman = 432;
-        bk2.stok = 0;
-        bk2.harga = 275000;
-
-        bk2.terjual(4);
+        Buku26 bk2 = new Buku26("Self Reward", "Maheera ayesha", 160, 29, 59000);
+        bk2.terjual(11);
         bk2.tampilkanInformasi();
     }
 }
