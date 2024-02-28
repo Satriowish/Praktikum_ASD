@@ -14,7 +14,6 @@ public class Buku26 {
         System.out.println("Jumlah halaman : " + halaman);
         System.out.println("Sisa Stok      : " + stok);
         System.out.println("Harga          : Rp." + harga);
-        System.out.println("Harga          : Rp." + harga);
     }
 
     void terjual(int jml) {
@@ -33,9 +32,9 @@ public class Buku26 {
         harga = hrg;
     }
 
-    // public Buku26() {
+    public Buku26() {
 
-    // }
+    }
 
     public Buku26(String jud, String pg, int hal, int stok, int har) {
         judul = jud;
