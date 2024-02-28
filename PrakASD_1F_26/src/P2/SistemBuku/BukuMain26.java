@@ -7,7 +7,7 @@ public class BukuMain26 {
         bk1.judul = "Today Ends Tomorrow Comes";
         bk1.pengarang = "Denanda Pratiwi";
         bk1.halaman = 198;
-        bk1.stok = 15;
+        bk1.stok = 17;
         bk1.harga = 71000;
 
         bk1.tampilkanInformasi();
@@ -22,6 +22,7 @@ public class BukuMain26 {
         bk2.stok = 0;
         bk2.harga = 275000;
 
+        bk2.terjual(4);
         bk2.tampilkanInformasi();
     }
 }

@@ -9,18 +9,19 @@ public class Buku26 {
 
     void tampilkanInformasi() {
         System.out.println();
-        System.out.println("Judul         : " + judul);
-        System.out.println("Pengarang     : " + pengarang);
-        System.out.println("Jumlah halaman: " + halaman);
-        System.out.println("Sisa Stok     : " + stok);
-        System.out.println("Harga         : Rp." + harga);
+        System.out.println("Judul          : " + judul);
+        System.out.println("Pengarang      : " + pengarang);
+        System.out.println("Jumlah halaman : " + halaman);
+        System.out.println("Sisa Stok      : " + stok);
+        System.out.println("Harga          : Rp." + harga);
+        System.out.println("Harga          : Rp." + harga);
     }
 
     void terjual(int jml) {
         if (stok > 0 && stok >= jml) {
             stok -= jml;
         } else {
-            System.out.println("Stock buku habis");
+            System.out.println("               : Stock buku habis");
         }
     }
 
