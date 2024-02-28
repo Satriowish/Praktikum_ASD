@@ -8,12 +8,12 @@ public class Buku26 {
     int harga;
 
     void tampilkanInformasi() {
+        System.out.println();
         System.out.println("Judul         : " + judul);
         System.out.println("Pengarang     : " + pengarang);
         System.out.println("Jumlah halaman: " + halaman);
         System.out.println("Sisa Stok     : " + stok);
         System.out.println("Harga         : Rp." + harga);
-        System.out.println();
     }
 
     void terjual(int jml) {
