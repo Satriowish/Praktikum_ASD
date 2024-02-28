@@ -13,7 +13,6 @@ public class BukuMain26 {
         bk1.tampilkanInformasi();
         bk1.terjual(5);
         bk1.gantiHarga(60000);
-        bk1.tampilkanInformasi();
 
         Buku26 bk2 = new Buku26("Self Reward", "Maheera ayesha", 160, 29, 59000);
         bk2.terjual(11);

@@ -33,9 +33,9 @@ public class Buku26 {
         harga = hrg;
     }
 
-    public Buku26() {
+    // public Buku26() {
 
-    }
+    // }
 
     public Buku26(String jud, String pg, int hal, int stok, int har) {
         judul = jud;
