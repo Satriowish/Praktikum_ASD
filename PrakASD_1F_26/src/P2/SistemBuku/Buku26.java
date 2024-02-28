@@ -10,13 +10,18 @@ public class Buku26 {
     void tampilkanInformasi() {
         System.out.println("Judul         : " + judul);
         System.out.println("Pengarang     : " + pengarang);
-        System.out.println("Jumlah halamn : " + halaman);
+        System.out.println("Jumlah halaman: " + halaman);
         System.out.println("Sisa Stok     : " + stok);
         System.out.println("Harga         : Rp." + harga);
+        System.out.println();
     }
 
     void terjual(int jml) {
-        stok -= jml;
+        if (stok > 0 && stok >= jml) {
+            stok -= jml;
+        } else {
+            System.out.println("Stock buku habis");
+        }
     }
 
     void restock(int jml) {
@@ -26,5 +31,4 @@ public class Buku26 {
     void gantiHarga(int hrg) {
         harga = hrg;
     }
-
 }
