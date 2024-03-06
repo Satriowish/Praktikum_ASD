@@ -3,11 +3,20 @@ package P3.ArrayBalok;
 public class Segitiga26 {
     public int alas;
     public int tinggi;
-    public int sisiMiring;
+    public double sisiMiring;
 
     public Segitiga26(int a, int t) {
         alas = a;
         tinggi = t;
+    }
+
+    public int hitungLuas() {
+        return alas * tinggi * 1 / 2;
+    }
+
+    public int hitungKeliling() {
+        sisiMiring = Math.sqrt(Math.pow(alas, 2) + Math.pow(tinggi, 2));
+        return alas + tinggi + (int) sisiMiring;
     }
 
     public static void main(String[] args) {
@@ -22,6 +31,8 @@ public class Segitiga26 {
             System.out.println("Segitiga ke-" + (i + 1) + ":");
             System.out.println("Alas: " + sgArray[i].alas);
             System.out.println("Tinggi: " + sgArray[i].tinggi);
+            System.out.println("Luas : " + sgArray[i].hitungLuas());
+            System.out.println("Keliling : " + sgArray[i].hitungKeliling());
             System.out.println();
         }
     }
