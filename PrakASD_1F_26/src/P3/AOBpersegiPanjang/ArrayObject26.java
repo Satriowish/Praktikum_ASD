@@ -5,6 +5,9 @@ import java.util.Scanner;
 public class ArrayObject26 {
     public static void main(String[] args) {
         Scanner sc26 = new Scanner(System.in);
+        // ========= Percobaan 2 Pertanyaan 3 ==========
+        Persegi26[] PgArray = new Persegi26[100];
+        PgArray[5].sisi = 20;
         PersegiPanjang26[][] array2D = new PersegiPanjang26[1][3];
 
         for (int i = 0; i < array2D.length; i++) {
