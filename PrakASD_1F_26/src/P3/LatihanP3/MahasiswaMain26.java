@@ -31,6 +31,10 @@ public class MahasiswaMain26 {
             System.out.println("Nilai IPK : " + mhsArray[i].ipk);
             System.out.println();
         }
-
+        System.out.println("======================");
+        mhsArray[0].hitungRataIpk(mhsArray);
+        System.out.println("=======================");
+        mhsArray[0].tampilDataIpkTerbesar(mhsArray);
+        ;
     }
 }
