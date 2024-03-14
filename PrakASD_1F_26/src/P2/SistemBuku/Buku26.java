@@ -14,7 +14,7 @@ public class Buku26 {
     public Buku26(String jud, String pg, int hal, int stok, int har) {
         judul = jud;
         pengarang = pg;
-        halaman = hal;
+        this.halaman = hal;
         this.stok = stok;
         harga = har;
     }
