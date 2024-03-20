@@ -1,4 +1,4 @@
-package P5;
+package P5.Faktorial;
 
 import java.util.Scanner;
 

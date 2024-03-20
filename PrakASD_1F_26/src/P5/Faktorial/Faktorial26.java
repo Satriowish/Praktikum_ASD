@@ -1,4 +1,4 @@
-package P5;
+package P5.Faktorial;
 
 public class Faktorial26 {
     int nilai;
