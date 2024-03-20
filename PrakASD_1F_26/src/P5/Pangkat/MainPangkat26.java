@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class MainPangkat26 {
     public static void main(String[] args) {
         Scanner sc26 = new Scanner(System.in);
-        System.out.println("===============================");
+        System.out.println("====================================");
         System.out.print("Masukan Jumlah Elemen yang dihitung : ");
         int elemen = sc26.nextInt();
 
@@ -19,14 +19,13 @@ public class MainPangkat26 {
         }
         System.out.println("HASIL PANGKAT - BRUTE FORCE");
         for (int i = 0; i < elemen; i++) {
-            System.out.println("Hasil dari " + png[i].nilai + " pangkat" + png[i].pangkat + "  "
+            System.out.println("Hasil dari " + png[i].nilai + " pangkat " + png[i].pangkat + "  "
                     + png[i].pangkatBF(png[i].nilai, png[i].pangkat));
         }
         System.out.println("HASIL PANGKAT - DEVIDE AND CONQUER");
         for (int i = 0; i < elemen; i++) {
-            System.out.println("Hasil dari " + png[i].nilai + " pangkat" + png[i].pangkat + " adalah "
+            System.out.println("Hasil dari " + png[i].nilai + " pangkat " + png[i].pangkat + " adalah "
                     + png[i].pangkatDC(png[i].nilai, png[i].pangkat));
-
         }
     }
 }
