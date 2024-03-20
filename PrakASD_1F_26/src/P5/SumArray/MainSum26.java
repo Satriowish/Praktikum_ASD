@@ -22,9 +22,7 @@ public class MainSum26 {
                 "Total Keuntungan perusahaan selama " + sm.elemen + " Bulan adalah = " + sm.totalBF(sm.keuntungan));
         System.out.println("===========================================================");
         System.out.println("ALGORITMA DIVIDE-CONQUER");
-        System.out.println(
-                "Total Keuntungan perusahaan selama " + sm.elemen + " Bulan adalah = "
-                        + sm.totalDC(sm.keuntungan, 0, sm.elemen - 1));
-
+        System.out.printf("Total Keuntungan perusahaan selama %d Bulan adalah = %.2f\n", sm.elemen,
+                sm.totalDC(sm.keuntungan, 0, sm.elemen - 1));
     }
 }
