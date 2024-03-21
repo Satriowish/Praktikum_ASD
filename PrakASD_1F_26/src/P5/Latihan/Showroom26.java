@@ -19,4 +19,16 @@ public class Showroom26 {
         return Math.max(lMax, rMax);
     }
 
+    // Method mencari top_acceleration terendah menggunakan Divide and Conquer!
+    public int TopAccelerationTerendah(int start, int end) {
+        if (start == end)
+            return jnsMobil[start].topAcceleration;
+
+        int mid = (start + end) / 2;
+        int lMin = TopAccelerationTerendah(start, mid);
+        int rMin = TopAccelerationTerendah(mid + 1, end);
+
+        return Math.min(lMin, rMin);
+    }
+
 }
