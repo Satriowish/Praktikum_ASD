@@ -29,12 +29,12 @@ public class Main26 {
         // Hasil dari top_acceleration tertinggi menggunakan Divide and Conquer
         int highestAcceleration = showroom.TopAccelerationTertinggi(0, jnsMobil.length - 1);
         System.out.println("Top acceleration tertinggi  : " + highestAcceleration);
-        System.out.println();
         // Hasil dari top_acceleration terendah menggunakan Divide and Conquer
         int lowestAcceleration = showroom.TopAccelerationTerendah(0, jnsMobil.length - 1);
         System.out.println("Top acceleration terendah   : " + lowestAcceleration);
-        System.out.println();
-
+        // hasil Rata-rata top_power dari seluruh mobil menggunakan Brute Force!
+        double RataRataPower = showroom.RataTopPower();
+        System.out.println("Rata-rata top power         : " + RataRataPower);
         System.out.println("==============================================================================");
     }
 }

@@ -31,4 +31,13 @@ public class Showroom26 {
         return Math.min(lMin, rMin);
     }
 
+    // Method mencari Rata-rata top_power seluruh mobil menggunakan Brute Force!
+    public double RataTopPower() {
+        int sum = 0;
+        for (Mobil26 car : jnsMobil) {
+            sum += car.topPower;
+        }
+        return (double) sum / jnsMobil.length;
+    }
+
 }
