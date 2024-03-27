@@ -20,14 +20,20 @@ public class Main26 {
         listBuku.tampil();
 
         // System.out.println("***************************");
-        // System.out.println("Data Seytelah diurutkan Secara Asc berdasarkan stock
+        // System.out.println("Data Setelah diurutkan Secara Asc berdasarkan stock
         // Menggunakan Bubble sort");
         // listBuku.bubbleShort();
         // listBuku.tampil();
 
+        // System.out.println("***************************");
+        // System.out.println("Data Setelah diurutkan Secara Desc berdasarkan stock
+        // Menggunakan Selection Sort");
+        // listBuku.selectionSort();
+        // listBuku.tampil();
+
         System.out.println("***************************");
-        System.out.println("Data Seytelah diurutkan Secara Desc berdasarkan stock Menggunakan Selection Sort");
-        listBuku.selectionSort();
+        System.out.println("Data Setelah diurutkan Secara Asc berdasarkan stock Menggunakan Insertion Sort");
+        listBuku.insertionSort();
         listBuku.tampil();
     }
 }
