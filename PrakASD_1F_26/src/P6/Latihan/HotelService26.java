@@ -49,4 +49,30 @@ public class HotelService26 {
             rooms[i] = temp;
         }
     }
+
+    public void bubbleSortBintang() {
+        for (int i = 0; i < size - 1; i++) {
+            for (int j = 0; j < size - i - 1; j++) {
+                if (rooms[j].bintang < rooms[j + 1].bintang) {
+                    Hotel26 temp = rooms[j];
+                    rooms[j] = rooms[j + 1];
+                    rooms[j + 1] = temp;
+                }
+            }
+        }
+    }
+
+    public void selectionSortBintang() {
+        for (int i = 0; i < size - 1; i++) {
+            int maxIndex = i;
+            for (int j = i + 1; j < size; j++) {
+                if (rooms[j].bintang > rooms[maxIndex].bintang) {
+                    maxIndex = j;
+                }
+            }
+            Hotel26 temp = rooms[maxIndex];
+            rooms[maxIndex] = rooms[i];
+            rooms[i] = temp;
+        }
+    }
 }

@@ -27,6 +27,16 @@ public class HotelMain26 {
         hotelService.selectionSortHarga();
         System.out.println("====== DATA HARGA SETELAH DISORTING MENGGUNAKAN SELECTION SORT =======");
         hotelService.tampilAll();
+        System.out.println();
+
+        hotelService.bubbleSortBintang();
+        System.out.println("======== DATA RATING SETELAH DISORTING MENGGUNAKAN BUBBLE SORT =======");
+        hotelService.tampilAll();
+        System.out.println();
+
+        hotelService.selectionSortBintang();
+        System.out.println("====== DATA RATING SETELAH DISORTING MENGGUNAKAN SELECTION SORT ======");
+        hotelService.tampilAll();
 
     }
 }
