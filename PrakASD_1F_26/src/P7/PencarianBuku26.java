@@ -30,13 +30,13 @@ public class PencarianBuku26 {
         return posisi;
     }
 
-    // public void TampilPosisi(int x, int pos) {
-    // if (pos != -1) {
-    // System.out.println("data : " + x + " ditemukan pada indeks " + pos);
-    // } else {
-    // System.out.println("data : " + x + " Tidak ditemukan ");
-    // }
-    // }
+    public void TampilPosisi(int x, int pos) {
+        if (pos != -1) {
+            System.out.println("data : " + x + " ditemukan pada indeks " + pos);
+        } else {
+            System.out.println("data : " + x + " Tidak ditemukan ");
+        }
+    }
 
     public void TampilData(int x, int pos) {
         if (pos != -1) {
@@ -49,5 +49,16 @@ public class PencarianBuku26 {
         } else {
             System.out.println("data : " + x + " Tidak ditemukan! ");
         }
+    }
+
+    public Buku26 FindBuku26(int cari) {
+        Buku26 temp = null;
+        for (int j = 0; j < listBk.length; j++) {
+            if (listBk[j].kodeBuku == cari) {
+                temp = listBk[j];
+                break;
+            }
+        }
+        return temp;
     }
 }
