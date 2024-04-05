@@ -27,6 +27,7 @@ public class BukuMain26 {
             Buku26 m = new Buku26(kodeBuku, judulBuku, tahunTerbit, pengarang, stok);
             data.tambah(m);
         }
+
         System.out.println("-------------------------------------------------");
         System.out.println("data Keseluruhan Buku : ");
         data.tampil();
@@ -48,6 +49,7 @@ public class BukuMain26 {
         System.out.println("_________________________________________________");
         System.out.println("Menggunakan Binary Search");
         System.out.println("_________________________________________________");
+        data.InsertionSort();
         posisi = data.FindBinarySearch(cari, 0, jmlBuku - 1);
         data.TampilData(cari, posisi);
     }

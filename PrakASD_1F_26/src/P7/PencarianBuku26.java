@@ -76,4 +76,15 @@ public class PencarianBuku26 {
         return -1;
     }
 
+    public void InsertionSort() {
+        for (int i = 1; i < listBk.length; i++) {
+            Buku26 key = listBk[i];
+            int j = i - 1;
+            while (j >= 0 && listBk[j].kodeBuku > key.kodeBuku) {
+                listBk[j + 1] = listBk[j];
+                j = j - 1;
+            }
+            listBk[j + 1] = key;
+        }
+    }
 }
