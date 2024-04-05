@@ -36,11 +36,19 @@ public class BukuMain26 {
         System.out.println("Masukkan Kode Buku yang dicari ");
         System.out.print("Kode Buku : ");
         int cari = s.nextInt();
+        System.out.println("_________________________________________________");
         System.out.println("Menggunakan Sequential Search");
-        // int posisi = data.FindSeqSearch(cari);
-        // data.TampilData(cari, posisi);
+        System.out.println("_________________________________________________");
+        int posisi = data.FindSeqSearch(cari);
+        data.TampilData(cari, posisi);
 
-        Buku26 dataBuku = data.FindBuku26(cari);
-        dataBuku.tampilDataBuku();
+        // Buku26 dataBuku = data.FindBuku26(cari);
+        // dataBuku.tampilDataBuku();
+
+        System.out.println("_________________________________________________");
+        System.out.println("Menggunakan Binary Search");
+        System.out.println("_________________________________________________");
+        posisi = data.FindBinarySearch(cari, 0, jmlBuku - 1);
+        data.TampilData(cari, posisi);
     }
 }
