@@ -1,13 +1,13 @@
 package P7;
 
 public class Buku26 {
-    int kodeBuku;
+    String kodeBuku;
     String judulBuku;
     int tahunTerbit;
     String pengarang;
     int stock;
 
-    public Buku26(int kodeBuku, String judulBuku, int tahunTerbit, String pengarang, int stock) {
+    public Buku26(String kodeBuku, String judulBuku, int tahunTerbit, String pengarang, int stock) {
         this.kodeBuku = kodeBuku;
         this.judulBuku = judulBuku;
         this.tahunTerbit = tahunTerbit;
