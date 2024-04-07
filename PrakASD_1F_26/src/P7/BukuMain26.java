@@ -70,8 +70,8 @@ public class BukuMain26 {
         String judulBukuCari = s.nextLine();
 
         System.out.println("_________________________________________________");
-        int cariJudul = data.FindSeqSearchStringJudul(judulBukuCari);
         System.out.println("Pencarian Judul Buku Menggunakan Sequential Search");
+        int cariJudul = data.FindSeqSearchStringJudul(judulBukuCari);
         if (cariJudul > 1) {
             System.out.println("Peringatan: Terdapat lebih dari satu buku dengan judul " + judulBukuCari);
         }
