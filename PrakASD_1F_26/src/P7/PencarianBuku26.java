@@ -87,9 +87,10 @@ public class PencarianBuku26 {
                 if (cariJudul == 1)
                     System.out.println("Data dengan judul " + cari + " ditemukan : ");
                 listBk[j].tampilDataBuku();
+                return j;
             }
         }
-        return cariJudul;
+        return -1;
     }
 
     // Method untuk mencari data judul buku menggunakan Binary search
