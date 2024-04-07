@@ -77,6 +77,37 @@ public class PencarianBuku26 {
             }
         }
     }
+
+    // Method untuk mencari data judul buku menggunakan Sequential search
+    public int FindSeqSearchStringJudul(String cari) {
+        int cariJudul = 0;
+        for (int j = 0; j < listBk.length; j++) {
+            if (listBk[j].judulBuku.equalsIgnoreCase(cari)) {
+                cariJudul++;
+                if (cariJudul == 1)
+                    System.out.println("Data dengan judul " + cari + " ditemukan : ");
+                listBk[j].tampilDataBuku();
+            }
+        }
+        return cariJudul;
+    }
+
+    // Method untuk mencari data judul buku menggunakan Binary search
+    public int FindBinarySearchStringJudul(String cari, int left, int right) {
+        if (right >= left) {
+            int mid = left + (right - left) / 2;
+            if (listBk[mid].judulBuku.equalsIgnoreCase(cari)) {
+                return mid;
+            }
+            int compareResult = listBk[mid].judulBuku.compareToIgnoreCase(cari);
+            if (compareResult > 0) {
+                return FindBinarySearchStringJudul(cari, left, mid - 1);
+            }
+            return FindBinarySearchStringJudul(cari, mid + 1, right);
+        }
+        return -1;
+    }
+
 }
 
 // **** Pencarian Sequential Berdasarkan kode buku bertipe int

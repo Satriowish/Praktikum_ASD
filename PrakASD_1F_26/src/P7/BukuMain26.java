@@ -33,7 +33,7 @@ public class BukuMain26 {
         data.sortDataBubble();
         data.tampil();
         s.nextLine();
-        System.out.println("_________________________________________________");
+
         System.out.println("_________________________________________________");
         System.out.println("Pencarian Data : ");
         System.out.println("Masukkan Kode Buku yang dicari ");
@@ -62,8 +62,32 @@ public class BukuMain26 {
         } else {
             System.out.println("Buku dengan kode " + kodeBukuCari + " tidak ditemukan!");
         }
+
+        System.out.println();
         System.out.println("_________________________________________________");
+        System.out.println("Pencarian data Berdasarkan Judul Buku");
+        System.out.print("Masukkan Judul Buku : ");
+        String judulBukuCari = s.nextLine();
+
+        System.out.println("_________________________________________________");
+        System.out.println("Pencarian Judul Buku Menggunakan Sequential Search");
+        int cariJudul = data.FindSeqSearchStringJudul(judulBukuCari);
+        if (cariJudul > 1) {
+            System.out.println("Peringatan: Terdapat lebih dari satu buku dengan judul " + judulBukuCari);
+        }
+        System.out.println("_________________________________________________");
+
+        int posisiJudulBukuBinary = data.FindBinarySearchStringJudul(judulBukuCari, 0, jmlBuku - 1);
+        System.out.println("Pencarian Judul Buku Menggunakan Binary Search");
+        if (posisiJudulBukuBinary != -1) {
+            System.out.println("Buku dengan judul " + judulBukuCari + " ditemukan :");
+            data.listBk[posisiJudulBukuBinary].tampilDataBuku();
+        } else {
+            System.out.println("Buku dengan judul " + judulBukuCari + " tidak ditemukan!");
+        }
+
     }
+
 }
 
 // ===============================================================================
