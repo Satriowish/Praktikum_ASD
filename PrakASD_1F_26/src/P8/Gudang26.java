@@ -8,7 +8,7 @@ public class Gudang26 {
     public Gudang26(int kapasitas) {
         size = kapasitas;
         tumpukan = new Barang26[size];
-        top = 1;
+        top = -1;
     }
 
     public boolean cekKosong() {
@@ -63,7 +63,7 @@ public class Gudang26 {
     public void tampilkanBarang() {
         if (!cekKosong()) {
             System.out.println("Rincian Tumpukan Barang di Gudang : ");
-            for (int i = 0; i <= top; i++) {
+            for (int i = top; i >= 0; i--) {
                 System.out.printf("Kode %d: %s (Kategori %s)\n", tumpukan[i].kode, tumpukan[i].nama,
                         tumpukan[i].kategori);
             }
