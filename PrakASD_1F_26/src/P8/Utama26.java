@@ -15,7 +15,8 @@ public class Utama26 {
             System.out.println("2. Ambil Barang");
             System.out.println("3. Tampilkan tumpukan Barang");
             System.out.println("4. Tampilkan Barang Teratas");
-            System.out.println("5. Keluar");
+            System.out.println("5. Tampilkan Barang Terbawah");
+            System.out.println("6. Keluar");
             System.out.print("Pilih opsi : ");
             int pilihan = sc26.nextInt();
             sc26.nextLine();
@@ -42,6 +43,9 @@ public class Utama26 {
                     gudang.lihatBarangTeratas();
                     break;
                 case 5:
+                    gudang.lihatBarangTerbawah();
+                    break;
+                case 6:
                     System.exit(0);
                 default:
                     System.out.println("Pilihan tidak Valid. Silahkan coba lagi!");
