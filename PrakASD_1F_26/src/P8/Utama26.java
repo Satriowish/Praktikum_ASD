@@ -4,8 +4,10 @@ import java.util.Scanner;
 
 public class Utama26 {
     public static void main(String[] args) {
-        Gudang26 gudang = new Gudang26(7);
         Scanner sc26 = new Scanner(System.in);
+        System.out.print("Masukkan Kapasitas Gudang : ");
+        int kapasitas = sc26.nextInt();
+        Gudang26 gudang = new Gudang26(kapasitas);
 
         while (true) {
             System.out.println("\nMenu :");
