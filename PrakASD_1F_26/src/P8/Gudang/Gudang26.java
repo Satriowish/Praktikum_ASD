@@ -1,4 +1,4 @@
-package P8;
+package P8.Gudang;
 
 public class Gudang26 {
     Barang26[] tumpukan;

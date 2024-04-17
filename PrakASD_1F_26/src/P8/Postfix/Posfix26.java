@@ -1,4 +1,4 @@
-package P8;
+package P8.Postfix;
 
 public class Posfix26 {
     int n;

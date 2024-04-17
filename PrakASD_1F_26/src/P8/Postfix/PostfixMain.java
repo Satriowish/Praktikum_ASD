@@ -1,4 +1,4 @@
-package P8;
+package P8.Postfix;
 
 import java.util.Scanner;
 
