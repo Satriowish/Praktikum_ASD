@@ -98,4 +98,15 @@ public class Gudang26 {
         }
     }
 
+    public int cariBarangbyNama(String cari) {
+        for (int i = 0; i <= top; i++) {
+            if (tumpukan[i].nama.equalsIgnoreCase(cari)) {
+                System.out.println("Barang dengan nama '" + cari + "' ditemukan pada indeks " + i);
+                return i;
+            }
+        }
+        System.out.println("Barang dengan nama '" + cari + "' tidak ditemukan.");
+        return -1;
+    }
+
 }
