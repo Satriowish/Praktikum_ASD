@@ -1,4 +1,4 @@
-package P8.Gudang;
+package P8;
 
 public class StackKonversi26 {
     int size;

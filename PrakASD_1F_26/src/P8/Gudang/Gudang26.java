@@ -1,5 +1,7 @@
 package P8.Gudang;
 
+import P8.StackKonversi26;
+
 public class Gudang26 {
     Barang26[] tumpukan;
     int size;
@@ -106,7 +108,7 @@ public class Gudang26 {
             }
         }
         System.out.println("Barang dengan nama '" + cari + "' tidak ditemukan.");
-        return -1;
+        return cariBarangbyNama(cari);
     }
 
 }

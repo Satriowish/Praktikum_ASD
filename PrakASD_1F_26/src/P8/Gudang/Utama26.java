@@ -50,6 +50,7 @@ public class Utama26 {
                     System.out.print("Masukkan Nama Barang yang ingin dicari : ");
                     String namaBarangCari = sc26.nextLine();
                     gudang.cariBarangbyNama(namaBarangCari);
+                    break;
                 case 7:
                     System.exit(0);
                 default:
