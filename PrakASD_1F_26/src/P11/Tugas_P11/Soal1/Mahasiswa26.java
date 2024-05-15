@@ -1,4 +1,4 @@
-package P11.Tugas_P11;
+package P11.Tugas_P11.Soal1;
 
 public class Mahasiswa26 {
     String nim;
