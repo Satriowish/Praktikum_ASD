@@ -8,9 +8,9 @@ public class SLLAntrian26 {
     }
 
     void Enqueue(Mhs26 input) {
-        // node baru yang ditambahkan berisi data melalui parameter pada method addLast
         Node26 ndInput = new Node26(input, null);
-        if (isEmpty()) { // jika kosong, maka peran head dan tail harus dimiliki node yang sama
+        if (isEmpty()) {
+            // jika kosong, maka peran head dan tail harus dimiliki node yang sama
             tail = ndInput;
             head = ndInput;
         } else {
