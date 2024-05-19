@@ -24,5 +24,41 @@ public class DLLMain26 {
         dll.print();
         System.out.println("Size : " + dll.size());
 
+        // Percobaan 2
+        System.out.println();
+        System.out.println("*******************************");
+        System.out.println();
+
+        // dll.addLast(50);
+        // dll.addLast(40);
+        // dll.addLast(10);
+        // dll.addLast(20);
+        // dll.print();
+        System.out.println("Size : " + dll.size());
+        System.out.println("===============================");
+        try {
+            dll.removeFirst();
+        } catch (Exception e) {
+            System.out.println("Error: " + e.getMessage());
+        }
+        dll.print();
+        System.out.println("Size : " + dll.size());
+        System.out.println("===============================");
+        try {
+            dll.removeLast();
+        } catch (Exception e) {
+            System.out.println("Error: " + e.getMessage());
+        }
+        dll.print();
+        System.out.println("Size : " + dll.size());
+        System.out.println("===============================");
+        try {
+            dll.remove(1);
+        } catch (Exception e) {
+            System.out.println("Error: " + e.getMessage());
+        }
+
+        dll.print();
+        System.out.println("Size : " + dll.size());
     }
 }
