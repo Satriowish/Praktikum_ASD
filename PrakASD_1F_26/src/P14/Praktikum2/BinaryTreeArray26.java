@@ -20,4 +20,5 @@ public class BinaryTreeArray26 {
             traverseInOrder(2 * idxStart + 2);
         }
     }
+
 }

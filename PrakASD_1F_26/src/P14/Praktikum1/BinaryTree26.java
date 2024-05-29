@@ -167,4 +167,20 @@ public class BinaryTree26 {
         }
     }
 
+    // Tugas soal No 1
+    void addRecursive(int data) {
+        root = addDataRecursive(root, data);
+    }
+
+    public Node26 addDataRecursive(Node26 current, int data) {
+        if (current == null) {
+            return new Node26(data);
+        }
+        if (data < current.data) {
+            current.left = addDataRecursive(current.left, data);
+        } else if (data > current.data) {
+            current.right = addDataRecursive(current.right, data);
+        }
+        return current;
+    }
 }
