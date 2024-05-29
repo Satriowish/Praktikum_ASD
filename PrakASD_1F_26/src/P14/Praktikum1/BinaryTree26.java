@@ -1,4 +1,4 @@
-package P14;
+package P14.Praktikum1;
 
 public class BinaryTree26 {
     Node26 root;

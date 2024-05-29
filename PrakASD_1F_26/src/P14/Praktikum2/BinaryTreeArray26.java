@@ -1,4 +1,4 @@
-package P14;
+package P14.Praktikum2;
 
 public class BinaryTreeArray26 {
     int[] data;
