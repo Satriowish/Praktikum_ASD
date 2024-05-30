@@ -43,5 +43,8 @@ public class BinaryTreeMain26 {
         // Tugas Soal No 2
         System.out.println("Nilai Minimum : " + bt.findMin());
         System.out.println("Nilai Maximum : " + bt.findMax());
+
+        // Tugas Soal No 3
+        bt.tampilDataLeaf();
     }
 }

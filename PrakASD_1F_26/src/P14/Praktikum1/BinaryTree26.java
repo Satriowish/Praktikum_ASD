@@ -207,4 +207,21 @@ public class BinaryTree26 {
         return current.data;
     }
 
+    // Tugas soal No 3
+    void tampilDataLeaf() {
+        System.out.print("Data Leaf     : ");
+        tampilLeaf(root);
+        System.out.println();
+    }
+
+    private void tampilLeaf(Node26 node) {
+        if (node != null) {
+            if (node.left == null && node.right == null) {
+                System.out.print(node.data + " ");
+            }
+            tampilLeaf(node.left);
+            tampilLeaf(node.right);
+        }
+    }
+
 }
