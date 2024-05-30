@@ -214,7 +214,7 @@ public class BinaryTree26 {
         System.out.println();
     }
 
-    private void tampilLeaf(Node26 node) {
+    public void tampilLeaf(Node26 node) {
         if (node != null) {
             if (node.left == null && node.right == null) {
                 System.out.print(node.data + " ");
@@ -222,6 +222,21 @@ public class BinaryTree26 {
             tampilLeaf(node.left);
             tampilLeaf(node.right);
         }
+    }
+
+    // Tugas soal No 4
+    int jumlahLeaf() {
+        return jumlahDataLeaf(root);
+    }
+
+    public int jumlahDataLeaf(Node26 node) {
+        if (node == null) {
+            return 0;
+        }
+        if (node.left == null && node.right == null) {
+            return 1;
+        }
+        return jumlahDataLeaf(node.left) + jumlahDataLeaf(node.right);
     }
 
 }

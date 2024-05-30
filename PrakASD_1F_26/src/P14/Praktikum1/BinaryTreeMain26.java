@@ -46,5 +46,8 @@ public class BinaryTreeMain26 {
 
         // Tugas Soal No 3
         bt.tampilDataLeaf();
+
+        // Tugas Soal No 4
+        System.out.println("Jumlah Leaf   : " + bt.jumlahLeaf());
     }
 }
