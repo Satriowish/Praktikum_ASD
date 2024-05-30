@@ -183,4 +183,28 @@ public class BinaryTree26 {
         }
         return current;
     }
+
+    // Tugas soal No 2
+    int findMin() {// Method untuk menampilkan Nilai Minimum
+        if (isEmpty()) {
+            throw new RuntimeException("Tree is empty!");
+        }
+        Node26 current = root;
+        while (current.left != null) {
+            current = current.left;
+        }
+        return current.data;
+    }
+
+    int findMax() {
+        if (isEmpty()) { // Method untuk menampilkan Nilai Maximum
+            throw new RuntimeException("Tree is empty!");
+        }
+        Node26 current = root;
+        while (current.right != null) {
+            current = current.right;
+        }
+        return current.data;
+    }
+
 }

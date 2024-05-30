@@ -40,5 +40,8 @@ public class BinaryTreeMain26 {
         bt.traversePreOrder(bt.root);
         System.out.println("");
 
+        // Tugas Soal No 2
+        System.out.println("Nilai Minimum : " + bt.findMin());
+        System.out.println("Nilai Maximum : " + bt.findMax());
     }
 }
