@@ -16,5 +16,13 @@ public class GraphMain26 {
         gedung.removeEdge(1, 3);
         gedung.printGraph();
 
+        // Percobaan 1 Soal No 5
+        Scanner sc26 = new Scanner(System.in);
+        System.out.print("Masukkan gedung asal   : ");
+        int asal = sc26.nextInt();
+        System.out.print("Masukkan gedung tujuan : ");
+        int tujuan = sc26.nextInt();
+        gedung.tetangga(asal, tujuan);
+        sc26.close();
     }
 }

@@ -69,4 +69,22 @@ public class Graph26 {
         System.out.println("");
     }
 
+    // Percobaan 1 Soal No 5
+    public void tetangga(int asal, int tujuan) throws Exception {
+        boolean hasil = false;
+        for (int i = 0; i < list[asal].size(); i++) {
+            if (list[asal].get(i) == tujuan) {
+                hasil = true;
+                break;
+            }
+        }
+        if (hasil) {
+            System.out
+                    .println("gedung " + (char) ('A' + asal) + " dan gedung " + (char) ('A' + tujuan) + " bertetangga");
+        } else {
+            System.out.println(
+                    "gedung " + (char) ('A' + asal) + " dan gedung " + (char) ('A' + tujuan) + " tidak bertetangga");
+        }
+    }
+
 }
