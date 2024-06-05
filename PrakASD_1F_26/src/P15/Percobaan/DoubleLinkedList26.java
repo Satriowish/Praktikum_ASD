@@ -35,6 +35,7 @@ public class DoubleLinkedList26 {
         }
     }
 
+    // Percobaan 1 (Perbaikan)
     public void remove(int item) throws Exception {
         Node26 current = head;
         while (current != null) {

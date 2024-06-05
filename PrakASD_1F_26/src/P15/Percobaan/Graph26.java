@@ -41,6 +41,7 @@ public class Graph26 {
         // list[asal].size());
     }
 
+    // Percobaan 1 (Perbaikan)
     public void removeEdge(int asal, int tujuan) throws Exception {
         // for (int i = 0; i < vertex; i++) { //perbaikan pada bagian ini
         // if (i == tujuan) { // Karena tidak diperlukan
