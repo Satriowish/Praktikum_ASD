@@ -1,5 +1,7 @@
 package P15.Percobaan;
 
+import java.util.Scanner;
+
 public class GraphMain26 {
     public static void main(String[] args) throws Exception {
         Graph26 gedung = new Graph26(6);
@@ -13,5 +15,6 @@ public class GraphMain26 {
         gedung.printGraph();
         gedung.removeEdge(1, 3);
         gedung.printGraph();
+
     }
 }
