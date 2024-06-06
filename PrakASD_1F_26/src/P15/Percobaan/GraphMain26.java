@@ -36,5 +36,7 @@ public class GraphMain26 {
         System.out.println("Hasil setelah penghapusan edge");
         gdg.removeEdge(2, 1);
         gdg.printGraph();
+        gdg.degree(0);
+
     }
 }
