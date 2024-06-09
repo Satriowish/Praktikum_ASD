@@ -1,4 +1,4 @@
-package P15.Percobaan;
+package P15.Praktikum;
 
 public class GraphMatriks26 {
     int vertex;
@@ -18,12 +18,15 @@ public class GraphMatriks26 {
     }
 
     public void printGraph() throws Exception {
+        System.out.print("\t");
         for (int i = 0; i < vertex; i++) {
-            System.out.print("Gedung " + (char) ('A' + i) + " : ");
+            System.out.print((char) ('A' + i) + "\t");
+        }
+        System.out.println();
+        for (int i = 0; i < vertex; i++) {
+            System.out.print((char) ('A' + i) + "\t");
             for (int j = 0; j < vertex; j++) {
-                if (matriks[i][j] != 1) {
-                    System.out.print("Gedung " + (char) ('A' + j) + " (" + matriks[i][j] + " m),");
-                }
+                System.out.print(matriks[i][j] + "\t");
             }
             System.out.println();
         }

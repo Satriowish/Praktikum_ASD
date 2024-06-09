@@ -1,4 +1,4 @@
-package P15.Percobaan;
+package P15.Praktikum;
 
 public class Node26 {
     int data;
