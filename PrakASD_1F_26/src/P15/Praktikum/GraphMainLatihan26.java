@@ -15,7 +15,8 @@ public class GraphMainLatihan26 {
             System.out.println("4. Print Graph");
             System.out.println("5. Cek Edge");
             System.out.println("6. Update Jarak");
-            System.out.println("7. Keluar");
+            System.out.println("&. Hitung Edge");
+            System.out.println("8. Keluar");
             System.out.print("Pilih menu: ");
             int choice = sc26.nextInt();
 
@@ -67,6 +68,10 @@ public class GraphMainLatihan26 {
                     graph.updateJarak(asal, tujuan, jarak);
                     break;
                 case 7:
+                    int totalEdges = graph.hitungEdge();
+                    System.out.println("Total edge dalam graf: " + totalEdges);
+                    break;
+                case 8:
                     System.out.println("Keluar dari program.");
                     sc26.close();
                     return;

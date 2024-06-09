@@ -57,4 +57,17 @@ public class GraphMatriks26 {
         matriks[asal][tujuan] = jarak;
     }
 
+    // Method Hitung edge
+    public int hitungEdge() {
+        int total = 0;
+        for (int i = 0; i < vertex; i++) {
+            for (int j = 0; j < vertex; j++) {
+                if (matriks[i][j] != 0) {
+                    total++;
+                }
+            }
+        }
+        return total;
+    }
+
 }
