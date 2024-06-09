@@ -14,7 +14,8 @@ public class GraphMainLatihan26 {
             System.out.println("3. Degree");
             System.out.println("4. Print Graph");
             System.out.println("5. Cek Edge");
-            System.out.println("6. Keluar");
+            System.out.println("6. Update Jarak");
+            System.out.println("7. Keluar");
             System.out.print("Pilih menu: ");
             int choice = sc26.nextInt();
 
@@ -57,6 +58,15 @@ public class GraphMainLatihan26 {
                     }
                     break;
                 case 6:
+                    System.out.print("Masukkan Nomor gedung asal   : ");
+                    asal = sc26.nextInt();
+                    System.out.print("Masukkan Nomor gedung tujuan : ");
+                    tujuan = sc26.nextInt();
+                    System.out.print("Masukkan jarak baru          : ");
+                    jarak = sc26.nextInt();
+                    graph.updateJarak(asal, tujuan, jarak);
+                    break;
+                case 7:
                     System.out.println("Keluar dari program.");
                     sc26.close();
                     return;

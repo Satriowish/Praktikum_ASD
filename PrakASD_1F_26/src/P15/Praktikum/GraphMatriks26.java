@@ -52,4 +52,9 @@ public class GraphMatriks26 {
         System.out.println("Degree dari Gedung " + (char) ('A' + asal) + "    : " + (totalIn + totalOut));
     }
 
+    // Method update jarak
+    public void updateJarak(int asal, int tujuan, int jarak) {
+        matriks[asal][tujuan] = jarak;
+    }
+
 }
